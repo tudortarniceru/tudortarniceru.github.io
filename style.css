@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100%;
+    width: 100%;
+    background: rgba(2,0,36, 0.7);
+    background: linear-gradient(90deg, rgba(2,0,36,0.7) 0%, rgba(9,9,121,0,7) 35%, rgba(0,212,255,0.7) 100%);
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(221, 221, 221);
+}
+
+#wrapper {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#name {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding: 10px 30px 10px 30px;
+}
+
+#separator {
+    height: 4px;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+}
+
+#content {
+    font-size: 48px;
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 5px 10px;
+    cursor: pointer;
+    border: 2px dotted rgb(221, 221, 221);
+    border-radius: 100%;
+    box-sizing: border-box;
+    background-color: rgba(221, 221, 221, 0.2);
+    transition: 0.2s;
+    color: inherit;
+    text-decoration: none;
+}
+
+.item:hover {
+    filter: brightness(90%);
+}
